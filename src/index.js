@@ -1,8 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import registerServiceWorker from "./registerServiceWorker";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const shows = {
+  shows: ["Seize The King", "Diana", "The Year to Come"]
+};
+
+ReactDOM.render(<App data={shows} />, document.getElementById("root"));
 registerServiceWorker();
